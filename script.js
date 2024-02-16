@@ -7,13 +7,15 @@ let allahuakbarCounter = document.getElementById('allahuakbar-counter');
 // subhanallah-increment
 document.getElementById('subhanallah-increment').addEventListener('click', function () {
     if (initialValue1 === 33) {
+        let audio = new Audio('subhanallah.mp3');
+        audio.play();
         return alert('Subhanallah complete. Please start Alhamdulillah');
+        
     }
     const counter = document.getElementById('subhanallah-counter');
     initialValue1++;
     counter.innerText = initialValue1;
-    let audio = new Audio('subhanallah.mp3');
-    audio.play();
+
 
 })
 
