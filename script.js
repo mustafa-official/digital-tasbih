@@ -12,6 +12,8 @@ document.getElementById('subhanallah-increment').addEventListener('click', funct
     const counter = document.getElementById('subhanallah-counter');
     initialValue1++;
     counter.innerText = initialValue1;
+    let audio = new Audio('subhanallah.mp3');
+    audio.play();
 
 })
 
@@ -77,6 +79,7 @@ document.getElementById('reset-btn').addEventListener('click', function () {
     alhamdulillahCounter.innerText = 0;
     allahuakbarCounter.innerText = 0;
     initialValue = 0;
+    location.reload()
 
 })
 
